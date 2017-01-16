@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
 import Meteor, { createContainer } from 'react-native-meteor';
 import Details from './Details';
 
 export default createContainer(() => ({
-  detailsReady: !Meteor.subscribe('details-list').ready(),
+  isLoading: !Meteor.subscribe('Orders.inUniversalCart').ready(),
+  order: Meteor.collection('orders').findOne({}),
 }), Details);

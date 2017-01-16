@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh",
     "lint": "eslint .",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios"
   },
   "dependencies": {
     "@exponent/react-native-navigator": "^0.4.7",
