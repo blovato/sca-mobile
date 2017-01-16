@@ -27,8 +27,4 @@ Alternatively for [android](https://facebook.github.io/react-native/docs/running
 
 ## Project Structure
 
-Check out [this article](https://medium.com/@spencer_carli/organizing-a-react-native-project-9514dfadaa0#.361gf1awu) for an overview of the `RNApp` directory.
-
-## Questions?
-
-If you have any questions please open an issue. Thanks!
+Check out [this article](https://medium.com/@spencer_carli/organizing-a-react-native-project-9514dfadaa0#.361gf1awu) for an overview.
