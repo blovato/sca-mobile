@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Meteor, { createContainer } from 'react-native-meteor';
 
 import LoggedOut from './layouts/LoggedOut';
@@ -8,7 +8,7 @@ import settings from './config/settings';
 
 Meteor.connect(settings.METEOR_URL);
 
-const RNApp = (props) => {
+const App = (props) => {
   const { status, user, loggingIn } = props;
 
   if (status.connected === false || loggingIn) {
@@ -19,16 +19,14 @@ const RNApp = (props) => {
   return <LoggedOut />;
 };
 
-RNApp.propTypes = {
-  status: React.PropTypes.object,
-  user: React.PropTypes.object,
-  loggingIn: React.PropTypes.bool,
+App.propTypes = {
+  status: PropTypes.object,
+  user: PropTypes.object,
+  loggingIn: PropTypes.bool,
 };
 
-export default createContainer(() => {
-  return {
-    status: Meteor.status(),
-    user: Meteor.user(),
-    loggingIn: Meteor.loggingIn(),
-  };
-}, RNApp);
+export default createContainer(() => ({
+  status: Meteor.status(),
+  user: Meteor.user(),
+  loggingIn: Meteor.loggingIn(),
+}), App);

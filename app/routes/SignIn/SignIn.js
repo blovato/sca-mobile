@@ -32,14 +32,14 @@ const SignIn = (props) => {
           secureTextEntry
           borderTop
         />
-        {confirmPasswordVisible ?
+        {confirmPasswordVisible && (
           <GenericTextInput
             placeholder="confirm password"
             onChangeText={(confirmPassword) => updateState({ confirmPassword })}
             secureTextEntry
             borderTop
           />
-        : null}
+        )}
       </InputWrapper>
 
       <View style={styles.error}>

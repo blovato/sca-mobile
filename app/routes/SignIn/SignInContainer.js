@@ -63,7 +63,7 @@ class SignInContainer extends Component {
     }
   }
 
-  handleCreateAccount() {
+  handleCreateAccount = () => {
     const { email, password, confirmPasswordVisible } = this.state;
 
     if (confirmPasswordVisible && this.validInput()) {
@@ -86,7 +86,7 @@ class SignInContainer extends Component {
       <SignIn
         updateState={this.setState.bind(this)}
         signIn={this.handleSignIn.bind(this)}
-        createAccount={this.handleCreateAccount.bind(this)}
+        createAccount={this.handleCreateAccount}
         {...this.state}
       />
     );

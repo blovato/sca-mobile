@@ -1,17 +1,8 @@
-import React from 'react';
+import { createContainer } from 'react-native-meteor';
 import Home from './Home';
 import Routes from '../../config/routes';
 
-const HomeContainer = (props) => {
-  return (
-    <Home
-      onDetailsPress={() => props.navigator.push(Routes.getDetailsRoute())}
-    />
-  );
-};
 
-HomeContainer.propTypes = {
-  navigator: React.PropTypes.object,
-};
-
-export default HomeContainer;
+export default createContainer((props) => ({
+  onDetailsPress: () => props.navigator.push(Routes.getDetailsRoute()),
+}), Home);

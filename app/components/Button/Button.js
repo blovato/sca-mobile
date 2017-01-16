@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
@@ -14,8 +14,8 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  text: React.PropTypes.string,
-  onPress: React.PropTypes.func,
+  text: PropTypes.string,
+  onPress: PropTypes.func,
 };
 
 Button.defaultProps = {
