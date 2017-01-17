@@ -4,5 +4,5 @@ import Profile from './Profile';
 
 export default createContainer(() => ({
   user: Meteor.user(),
-  signOut: Meteor.logout(),
+  signOut: () => Meteor.logout(),
 }), Profile);

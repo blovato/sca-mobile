@@ -7,7 +7,7 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: colors.background,
+    backgroundColor: '#ffffff',
   },
   buttons: {
     flexDirection: 'row',
@@ -27,8 +27,8 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   logo: {
-    width: 125,
-    height: 125,
+    width: window.width,
+    height: window.height / 2,
   },
   headerText: {
     fontSize: 30,

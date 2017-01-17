@@ -16,9 +16,6 @@ const SignIn = (props) => {
           style={styles.logo}
           source={images.logo}
         />
-
-        <Text style={styles.headerText}>React Native Meteor</Text>
-        <Text style={styles.subHeaderText}>Boilerplate</Text>
       </View>
 
       <InputWrapper>

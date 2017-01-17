@@ -9,7 +9,7 @@ const Home = (props) => (
       Home
     </Text>
     <Button
-      text="Details"
+      text="Order"
       onPress={props.onDetailsPress}
     />
   </View>
