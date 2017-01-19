@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RNApp</string>
+    <string name="title_activity_share">Add To Cart</string>
 </resources>
