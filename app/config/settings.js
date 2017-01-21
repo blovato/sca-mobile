@@ -2,7 +2,7 @@
 // localhost to your machines IP address
 const METEOR_URL = process.env.NODE_ENV === 'production'
   ? '' // todo: production
-  : 'ws://localhost:3000/websocket'; // local meteor websocket
+  : 'ws://192.168.38.235:3000/websocket'; // local meteor websocket
 
 export const settings = {
   env: process.env.NODE_ENV,

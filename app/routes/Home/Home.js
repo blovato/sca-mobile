@@ -9,6 +9,9 @@ const Home = (props) => (
     <Text style={styles.main}>
       Meteor backend is {Meteor.status().status}
     </Text>
+    <Text style={styles.main}>
+      Meteor backend is {props.userId}
+    </Text>
     <Button
       text="Order"
       onPress={props.onDetailsPress}
@@ -18,6 +21,7 @@ const Home = (props) => (
 
 Home.propTypes = {
   onDetailsPress: PropTypes.func.isRequired,
+  userId: PropTypes.string,
 };
 
 export default Home;
